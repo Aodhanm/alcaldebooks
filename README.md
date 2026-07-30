@@ -80,5 +80,4 @@ After that, **every `git push` to `main` redeploys the site automatically.**
 - The "View on eBay" links currently point at eBay *searches*. Replace each
   with the real listing URL as you create it.
 - Covers are drawn placeholders until you add real photos (see `images/`).
-- Contact email in `index.html` is `hello@alcaldebooks.com` — set up that
-  forwarding in Porkbun (free) or change it to whatever address you prefer.
+- Contact email in `index.html` is `alcaldebooks@gmail.com` (the shop inbox).
