@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alcalde Books — Californian &amp; Western Americana</title>
+  <meta name="description" content="Alcalde Books — a curated shop of California and Western Americana history: foundational chronicles, expedition narratives, regional histories, and fine antiquarian copies, selected and described by a trained historian.">
+  <meta name="theme-color" content="#23503f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alcalde Books — Californian &amp; Western Americana">
+  <meta property="og:description" content="A curated shop of California and Western history. Browse the catalogue; purchases run securely through eBay.">
+  <meta property="og:url" content="https://alcaldebooks.com/">
+</head>
+<body>
+
+  <header class="shop">
+    <div class="wrap shop-inner">
+      <div class="brand">
+        <div class="name">Alcalde&nbsp;<span class="amp">Books</span></div>
+        <div class="tag">Californian &amp; Western Americana · History</div>
+        <div class="estd">Bookseller · San Francisco Bay</div>
+      </div>
+      <nav class="shop-nav">
+        <a href="#catalog">Catalogue</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="intro">
+      <p>A working library of California and Western history — foundational chronicles, expedition narratives, county and regional histories, and the occasional fine antiquarian copy. Selected and described by a trained historian.</p>
+      <div class="how">How buying works: <b>browse here → purchase securely on eBay</b></div>
+      <details class="cond-key">
+        <summary>What the condition grades mean</summary>
+        <dl>
+          <dt>Fine</dt><dd>Nearly perfect; unread, no defects.</dd>
+          <dt>Very Good (VG)</dt><dd>Light wear, no tears; all flaws noted.</dd>
+          <dt>Good</dt><dd>An honest, complete, worn reading copy.</dd>
+          <dt>Fair</dt><dd>Worn; text complete but may lack blank leaves.</dd>
+          <dt>Ex-library</dt><dd>Bears library markings — always disclosed.</dd>
+          <dt>VG / G</dt><dd>Book grade first, then dust-jacket grade.</dd>
+        </dl>
+      </details>
+    </div>
+  </div>
+
+  <div class="controls" id="catalog">
+    <div class="wrap controls-inner">
+      <div class="search"><input id="q" type="search" placeholder="Search title or author…" aria-label="Search books"></div>
+      <div class="chips" id="chips">
+        <button class="chip" data-subj="all" aria-pressed="true">All</button>
+        <button class="chip" data-subj="California" aria-pressed="false">California</button>
+        <button class="chip" data-subj="Western Americana" aria-pressed="false">Western Americana</button>
+        <button class="chip" data-subj="Antiquarian" aria-pressed="false">Rare &amp; Antiquarian</button>
+      </div>
+      <div class="count" id="count"></div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="grid" id="grid"></div>
+  </div>
+
+  <div class="wrap">
+    <section class="about" id="about">
+      <div>
+        <h2>About the bookseller</h2>
+        <p>Every book here has passed through the hands of a working historian — a Berkeley-trained specialist in early California and the Spanish and Mexican West. Descriptions are careful, conditions are graded honestly to the standard antiquarian scale, and nothing is listed that I wouldn't be glad to own myself.</p>
+        <p>This is a curated shop, not a warehouse. If you're hunting a specific title or building a collection in California, Western Americana, or borderlands history, write to me — I keep a want-list and source to order.</p>
+      </div>
+      <div class="side" id="contact">
+        <h4>How it works</h4>
+        <div class="item"><b>Browse</b><span>See the full catalogue and condition here.</span></div>
+        <div class="item"><b>Buy</b><span>Checkout runs securely through eBay — buyer protection included.</span></div>
+        <div class="item"><b>Ship</b><span>USPS Media Mail, carefully packed, tracked.</span></div>
+        <div class="item"><b>Ask</b><span><a href="mailto:hello@alcaldebooks.com">Questions &amp; want-lists welcome →</a></span></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <span>© <span id="year">2026</span> Alcalde Books · Californian &amp; Western Americana</span>
+      <span>Purchases &amp; payment handled by eBay · Media Mail shipping</span>
+    </footer>
+  </div>
+
+  <script src="books.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
