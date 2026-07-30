@@ -33,7 +33,7 @@ const BOOKS = [
     antiquarian: true,
     cond: "Good, rebound",
     price: 220,
-    spine: "#5b3a2e",
+    spine: "#6e2b26",
     ebay: "https://www.ebay.com/sch/i.html?_nkw=annals+of+san+francisco+1855",
     blurb: "First edition of the foundational chronicle of Gold-Rush San Francisco, with the folding view."
   },
@@ -44,7 +44,7 @@ const BOOKS = [
     subject: "California",
     cond: "Very Good, 2 vols.",
     price: 145,
-    spine: "#274b3d",
+    spine: "#4a352a",
     ebay: "https://www.ebay.com/sch/i.html?_nkw=eldredge+beginnings+of+san+francisco",
     blurb: "Complete two-volume set tracing the Spanish and Mexican origins of the city."
   },
@@ -56,7 +56,7 @@ const BOOKS = [
     antiquarian: true,
     cond: "VG / G",
     price: 275,
-    spine: "#33475e",
+    spine: "#7a4e1e",
     ebay: "https://www.ebay.com/sch/i.html?_nkw=bolton+anza+california+expeditions",
     blurb: "The five-volume University of California edition — standard source on the Anza overland route."
   },
@@ -68,7 +68,7 @@ const BOOKS = [
     antiquarian: true,
     cond: "Good, ex-library",
     price: 40,
-    spine: "#6a5326",
+    spine: "#5a2f2a",
     ebay: "https://www.ebay.com/sch/i.html?_nkw=bancroft+history+of+california",
     blurb: "Volume I of the monumental seven-volume history. Library markings; a sound reading copy."
   },
@@ -81,7 +81,7 @@ const BOOKS = [
     cond: "Fair",
     price: 90,
     sold: true,
-    spine: "#4a2f38",
+    spine: "#3f2a24",
     ebay: "#",
     blurb: "Firsthand recollections of Mexican and early American California by a pioneer merchant."
   },
@@ -92,7 +92,7 @@ const BOOKS = [
     subject: "Western Americana",
     cond: "Fine",
     price: 35,
-    spine: "#2f5a52",
+    spine: "#6a4a1c",
     ebay: "https://www.ebay.com/sch/i.html?_nkw=portola+expedition+stanger+brown",
     blurb: "Careful reconstruction of the first overland exploration of Alta California."
   }

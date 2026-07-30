@@ -174,3 +174,33 @@ footer.foot { border-top: 1px solid var(--rule); padding: 22px 0 60px; font-fami
 
 @media (max-width: 680px) { .about { grid-template-columns: 1fr; gap: 24px; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* ===================================================================
+   DARK REDESIGN (2026-07) — forces the fine-press dark palette,
+   an all-white wordmark, a gilt vara crest, and a gold rule + red
+   California star. Appended so it overrides the base theme cleanly.
+   =================================================================== */
+:root {
+  --paper: #15120e; --card: #221d16; --card-2: #1c1813;
+  --ink: #ece3d0; --ink-soft: #b8ac93; --ink-faint: #8a8069;
+  --rule: #332c22; --rule-strong: #473d2d;
+  --green: #d0a23c; --green-bright: #e2b657; --brass: #d0a23c; --brass-soft: #c8983a;
+  --oxblood: #c62822; --rust: #c62822; --gilt: #d0a23c; --wood: #9a6a44;
+  --shadow: 0 1px 0 rgba(0,0,0,.2), 0 12px 30px -22px rgba(0,0,0,.85);
+  --shadow-lift: 0 2px 0 rgba(0,0,0,.3), 0 22px 46px -24px rgba(0,0,0,.9);
+  --btn-ink: #15120e;
+}
+header.shop { border-bottom: none; }
+.shop-inner { align-items: center; padding: 24px 0 14px; }
+.brand { display: flex; align-items: center; gap: 16px; }
+.brand .crest { width: 80px; height: 80px; flex: none; color: var(--gilt); }
+.brand-text { display: flex; flex-direction: column; gap: 5px; }
+.brand .name { font-size: clamp(1.5rem, 3.6vw, 2rem); letter-spacing: .2em; text-transform: uppercase; color: var(--ink); gap: 0; }
+.brand .name .amp { color: inherit; }
+.brand .tag { font-family: var(--sans); font-size: .6rem; letter-spacing: .28em; text-transform: uppercase; color: var(--gilt); font-weight: 700; margin-top: 0; }
+.shop-nav a:hover { border-bottom-color: var(--gilt); color: var(--ink); }
+.divider { display: flex; align-items: center; gap: 16px; padding: 2px 0 0; }
+.divider .ln { flex: 1; height: 1.5px; background: var(--gilt); opacity: .85; }
+.divider .star { width: 22px; height: 22px; flex: none; color: var(--rust); }
+.chip[aria-pressed="true"] { background: var(--rust); border-color: var(--rust); color: #fff; }
+@media (max-width: 520px) { .brand .crest { width: 60px; height: 60px; } }
