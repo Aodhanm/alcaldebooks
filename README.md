@@ -53,23 +53,27 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-## Deploy (Cloudflare Pages + Porkbun — same as archivesofcalifornia.com)
+## Deploy (GitHub Pages + Porkbun — same as archivesofcalifornia.com)
 
-1. **Push this folder to a new GitHub repo** (e.g. `alcaldebooks`).
-2. **Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git.**
-   Pick the repo. Build settings: **no build command**, **output directory `/`
-   (root)**. Deploy — you get a `*.pages.dev` URL.
-3. **Add the custom domain:** in the Pages project → *Custom domains* → add
-   `alcaldebooks.com` (and `www.alcaldebooks.com`). Cloudflare shows the DNS
-   target.
-4. **Point the domain at it in Porkbun** → *DNS records*:
-   - Root: an `ALIAS`/`ANAME` record for `alcaldebooks.com` → the Pages
-     target (or move the domain's nameservers to Cloudflare and let Pages set
-     it automatically — simplest).
-   - `www`: a `CNAME` → `alcaldebooks.com` (or the `pages.dev` target).
-5. Wait for DNS to propagate (minutes to a couple hours). HTTPS is automatic.
+The repo is `github.com/Aodhanm/alcaldebooks`, served by GitHub Pages from the
+`main` branch root. The `CNAME` file in this folder holds the custom domain, so
+Pages knows to serve `alcaldebooks.com`.
 
-After that, every `git push` redeploys the site automatically.
+**One-time DNS setup in Porkbun** (the only part not done from the repo) —
+DNS records for `alcaldebooks.com`:
+
+- Four `A` records for the root (`alcaldebooks.com`), pointing at GitHub Pages:
+  - `185.199.108.153`
+  - `185.199.109.153`
+  - `185.199.110.153`
+  - `185.199.111.153`
+- One `CNAME` for `www` → `aodhanm.github.io`
+
+Then in the repo's **Settings → Pages**, confirm the custom domain is
+`alcaldebooks.com` and tick **Enforce HTTPS** (once the cert issues, usually
+within an hour of DNS resolving).
+
+After that, **every `git push` to `main` redeploys the site automatically.**
 
 ## Notes
 
