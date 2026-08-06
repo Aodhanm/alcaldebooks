@@ -8,92 +8,136 @@
    title       (required)  The book's title.
    author      (required)  Author(s), as you'd cite them.
    year        (required)  Year of this printing/edition (number).
-   subject     (required)  "California" or "Western Americana"
+   subject     (required)  "Americana", "Literature",
+                           "Fine Press & Occult", or "History & Reference"
                            (drives the filter chips).
    antiquarian (optional)  true = also show under "Rare & Antiquarian".
-   cond        (required)  Condition, e.g. "Very Good", "VG / G",
-                           "Good, ex-library". See the key on the page.
+   cond        (required)  Condition, e.g. "Very Good", "VG / G".
    price       (required)  Whole-dollar price (number, no "$").
    blurb       (required)  One or two sentences of description.
    ebay        (required)  Full URL of the eBay listing. Use "#" if
                            the listing isn't up yet (button shows greyed).
-   img         (optional)  Filename in /images (e.g. "annals.jpg").
-                           Omit it and a drawn placeholder cover shows.
+   img         (optional)  Filename in /images.
    spine       (optional)  Hex color for the drawn cover (ignored if
-                           img is set), e.g. "#5b3a2e".
+                           img is set).
    sold        (optional)  true = show a SOLD stamp, disable the button.
    ============================================================ */
 
 const BOOKS = [
   {
-    title: "The Annals of San Francisco",
-    author: "Soulé, Gihon & Nisbet",
-    year: 1855,
-    subject: "California",
-    antiquarian: true,
-    cond: "Good, rebound",
-    price: 220,
-    spine: "#6e2b26",
-    ebay: "https://www.ebay.com/sch/i.html?_nkw=annals+of+san+francisco+1855",
-    blurb: "First edition of the foundational chronicle of Gold-Rush San Francisco, with the folding view."
+    title: "De Natura Rerum + Arca Arcanorum (2-vol. pair)",
+    author: "Paracelsus; Arthur Dee",
+    year: 2024,
+    subject: "Fine Press & Occult",
+    cond: "Like New, hand-numbered #378/500 & #552/700",
+    price: 270,
+    img: "aula-pair.jpg",
+    ebay: "https://www.ebay.com/itm/137591376202",
+    blurb: "Two hand-numbered Aula Lucis private-press editions of classic alchemical texts; De Natura Rerum is sold out at the publisher."
   },
   {
-    title: "The Beginnings of San Francisco",
-    author: "Zoeth Skinner Eldredge",
-    year: 1912,
-    subject: "California",
-    cond: "Very Good, 2 vols.",
-    price: 145,
-    spine: "#4a352a",
-    ebay: "https://www.ebay.com/sch/i.html?_nkw=eldredge+beginnings+of+san+francisco",
-    blurb: "Complete two-volume set tracing the Spanish and Mexican origins of the city."
+    title: "Alchemy Rising: The White Book",
+    author: "Heliophilus",
+    year: 2025,
+    subject: "Fine Press & Occult",
+    cond: "Like New, hand-numbered #211/1000",
+    price: 240,
+    img: "alchemy.jpg",
+    ebay: "https://www.ebay.com/itm/137591324615",
+    blurb: "Full white bonded leather with blue foil; ~120 color photographs of practical laboratory alchemy. Sold out at U.S. stockists."
   },
   {
-    title: "Anza's California Expeditions",
-    author: "Herbert E. Bolton",
-    year: 1930,
-    subject: "Western Americana",
-    antiquarian: true,
-    cond: "VG / G",
-    price: 275,
-    spine: "#7a4e1e",
-    ebay: "https://www.ebay.com/sch/i.html?_nkw=bolton+anza+california+expeditions",
-    blurb: "The five-volume University of California edition — standard source on the Anza overland route."
+    title: "English Historical Documents, Vol. I: c. 500–1042",
+    author: "Dorothy Whitelock, ed.",
+    year: 1968,
+    subject: "History & Reference",
+    cond: "Very Good, jacket in fragments",
+    price: 150,
+    img: "ehd.jpg",
+    ebay: "https://www.ebay.com/itm/137591394306",
+    blurb: "The foundational 1,000-page sourcebook for Anglo-Saxon England, with the fold-out map intact. 1968 impression of the 1955 first."
   },
   {
-    title: "History of California, Vol. I",
-    author: "Hubert Howe Bancroft",
-    year: 1884,
-    subject: "California",
+    title: "The Romance and Tragedy of a Widely Known Business Man of New York",
+    author: "William Ingraham Russell",
+    year: 1905,
+    subject: "Americana",
     antiquarian: true,
-    cond: "Good, ex-library",
-    price: 40,
-    spine: "#5a2f2a",
-    ebay: "https://www.ebay.com/sch/i.html?_nkw=bancroft+history+of+california",
-    blurb: "Volume I of the monumental seven-volume history. Library markings; a sound reading copy."
-  },
-  {
-    title: "Sixty Years in California",
-    author: "William Heath Davis",
-    year: 1889,
-    subject: "California",
-    antiquarian: true,
-    cond: "Fair",
+    cond: "Good, signed limited #12/1000",
     price: 90,
-    sold: true,
-    spine: "#3f2a24",
-    ebay: "#",
-    blurb: "Firsthand recollections of Mexican and early American California by a pioneer merchant."
+    img: "russell.jpg",
+    ebay: "https://www.ebay.com/itm/137591422984",
+    blurb: "Special Autograph Edition signed by the author, copy Number 12 of 1,000. A candid Gilded Age memoir of fortune and bankruptcy."
   },
   {
-    title: "Route of the Portolá Expedition, 1769–70",
-    author: "Stanger & Brown",
-    year: 1969,
-    subject: "Western Americana",
-    cond: "Fine",
-    price: 35,
-    spine: "#6a4a1c",
-    ebay: "https://www.ebay.com/sch/i.html?_nkw=portola+expedition+stanger+brown",
-    blurb: "Careful reconstruction of the first overland exploration of Alta California."
+    title: "Les Martyrs",
+    author: "Chateaubriand",
+    year: 1870,
+    subject: "Literature",
+    antiquarian: true,
+    cond: "Very Good, half morocco",
+    price: 90,
+    img: "martyrs.jpg",
+    ebay: "https://www.ebay.com/itm/137591525202",
+    blurb: "Handsome green half-morocco Garnier printing with gilt raised bands, armorial bookplate, and period French provenance."
+  },
+  {
+    title: "War and Peace (3-volume set)",
+    author: "Leo Tolstoy",
+    year: 1900,
+    subject: "Literature",
+    antiquarian: true,
+    cond: "Good−, honest wear, one repaired leaf",
+    price: 80,
+    img: "warpeace.jpg",
+    ebay: "https://www.ebay.com/itm/137591432601",
+    blurb: "Complete antique Crowell set in the Dole translation with the Garrett plates, c. 1898–1920s. All condition points photographed."
+  },
+  {
+    title: "A New American Biographical Dictionary",
+    author: "Thomas J. Rogers",
+    year: 1824,
+    subject: "Americana",
+    antiquarian: true,
+    cond: "Acceptable, original full leather",
+    price: 80,
+    img: "rogers.jpg",
+    ebay: "https://www.ebay.com/itm/137591558799",
+    blurb: "Early-Republic biographies of the Revolutionary generation, printed by the compiler in Easton, Pennsylvania. Unrestored survivor."
+  },
+  {
+    title: "Handley Cross; or, Mr. Jorrocks's Hunt",
+    author: "R. S. Surtees",
+    year: 1890,
+    subject: "Literature",
+    antiquarian: true,
+    cond: "Reading copy; plates bright",
+    price: 60,
+    img: "handley.jpg",
+    ebay: "https://www.ebay.com/itm/137591479299",
+    blurb: "The great Victorian comic hunting novel with John Leech's hand-colored plates, bright and complete in a well-worn period binding."
+  },
+  {
+    title: "The War of the Rebellion: Official Records, Ser. I, Vol. XXXII, Pt. III",
+    author: "U.S. War Department",
+    year: 1891,
+    subject: "Americana",
+    antiquarian: true,
+    cond: "Good, solid original cloth",
+    price: 25,
+    img: "rebellion.jpg",
+    ebay: "https://www.ebay.com/itm/137591571055",
+    blurb: "Original GPO volume of the \"OR\": Grant and Sherman correspondence from the eve of the Atlanta campaign, spring 1864."
+  },
+  {
+    title: "The Mughul Empire (History & Culture of the Indian People, Vol. VII)",
+    author: "R. C. Majumdar, ed.",
+    year: 1984,
+    subject: "History & Reference",
+    cond: "Very Good in jacket",
+    price: 40,
+    img: "mughul.jpg",
+    ebay: "#",
+    blurb: "The standard large-scale scholarly history of the Mughal centuries; thick octavo of 1,000+ pages in the tan jacket."
   }
 ];
