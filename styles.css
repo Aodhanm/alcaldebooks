@@ -204,3 +204,14 @@ header.shop { border-bottom: none; }
 .divider .star { width: 22px; height: 22px; flex: none; color: var(--rust); }
 .chip[aria-pressed="true"] { background: var(--rust); border-color: var(--rust); color: #fff; }
 @media (max-width: 520px) { .brand .crest { width: 60px; height: 60px; } }
+
+
+/* maker's mark: the AC monogram, same device as the ranchos portal */
+.foot .maker{
+  display:inline-flex;align-items:center;gap:9px;
+  text-decoration:none;color:inherit;opacity:.72;
+  transition:opacity .2s ease;
+}
+.foot .maker:hover,.foot .maker:focus-visible{opacity:1;outline:0}
+.foot .maker img{display:block;width:30px;height:30px}
+.foot .maker span{font-size:.82em;letter-spacing:.04em}
