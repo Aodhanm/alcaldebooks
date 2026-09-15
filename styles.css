@@ -213,5 +213,5 @@ header.shop { border-bottom: none; }
   transition:opacity .2s ease;
 }
 .foot .maker:hover,.foot .maker:focus-visible{opacity:1;outline:0}
-.foot .maker img{display:block;width:30px;height:30px}
+.foot .maker img,.foot .maker .makermark{display:block;width:30px;height:30px}
 .foot .maker span{font-size:.82em;letter-spacing:.04em}
